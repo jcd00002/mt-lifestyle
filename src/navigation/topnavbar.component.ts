@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'ml-topnavbar',
+    selector: 'mt-topnavbar',
     templateUrl: 'topnavbar.component.html',
     styleUrls: ['topnavbar.component.css']
 })
