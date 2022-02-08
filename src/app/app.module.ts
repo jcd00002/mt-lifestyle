@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CardsComponent } from 'src/body/cards.component';
 import { HomeComponent } from 'src/body/home.component';
+import { LowerCardsComponent } from 'src/body/lower.cards.component';
+
 
 
 import { SecondNavBarComponent } from 'src/navigation/second.topnavbar.component';
@@ -15,7 +17,8 @@ import { AppComponent } from './app.component';
     TopNavBarComponent,
     SecondNavBarComponent,
     HomeComponent,
-    CardsComponent
+    CardsComponent,
+    LowerCardsComponent
   ],
   imports: [
     BrowserModule

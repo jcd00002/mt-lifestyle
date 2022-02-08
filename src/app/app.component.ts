@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { mock_product_list } from 'src/body/mock_product_list';
+import { ProductItemModel } from 'src/body/product-item-model';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mt-lifestyle';
+  products: ProductItemModel [] = []; 
+
+  constructor(){
+    for(var product of mock_product_list){
+        this.products.push(product); 
+  }
+}
+  
 }
