@@ -1,0 +1,38 @@
+To begin working this week on the website, the first order of instructions was to install routing for angular.
+
+Ater I installed routing for angular, the app-routing.module.ts appear in the package explorer. 
+
+1.Inside of route module, implementation of a new linked list takes places. 
+Next I imported the routerModules from angular. 
+
+2.To create new components and make code aviable on certain pages on compared to others, I began making a series of classes and moving some code around. 
++ Addition of files called mustang.merch-layout.component.css,html,ts
++ implementation of the ts file that way it is able to be used on the website
++ imported in the app.module.ts file 
++ insde of the app-routing class, addition of path to the webpage for the tab "Mustang Lifestyle Merch" 
+
+Inside of the class of second.top navbar component.html:
++ addition of routerLink to the Mustang Lifestyle Merch implmentation button. 
+
+Creation of another routing/ new component file called homelayout.component
++ This file takes place as the new homepage where all the code, cards, navbar, carousel were created
++ Luckly all of these components belong inside the home tab, therefore I moved the code for everything from app.module.html besides the navbar
+inside of homelayout.component.html
+
+3. Addition of new files called "ford-vehicles-layout.component.css,html,ts 
++ implementation of the ts file that way it is able to be used on the website
++ imported in the app.module.ts file 
++ insde of the app-routing class, addition of path to the webpage for the tab "Ford Vehicles" 
+
+4. Addition of new angular routing/component files called "Account" to take you to the account page 
++ implementation of the ts file that way it is able to be used on the website
++ imported in the app.module.ts file 
++ insde of the app-routing class, addition of path to the webpage for the tab "mustanglifestyle.net/account" 
+
+5.  Addition of new angular routing/component files called "2020-gt500.component.css,html,ts" to take you to the account page 
++ implementation of the ts file that way it is able to be used on the website
++ imported in the app.module.ts file 
++ insde of the app-routing class, addition of path to the webpage for imformation about the "2020 gt500" 
+
+6. After created the 5 components then adding routes to them I began to fix some issues I am having on my "home" page 
+ 

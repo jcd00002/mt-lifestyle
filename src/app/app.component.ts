@@ -10,12 +10,6 @@ import { ProductItemModel } from 'src/body/product-item-model';
 })
 export class AppComponent {
   title = 'mt-lifestyle';
-  products: ProductItemModel [] = []; 
-
-  constructor(){
-    for(var product of mock_product_list){
-        this.products.push(product); 
-  }
-}
+ 
   
 }

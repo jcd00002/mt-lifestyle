@@ -2,17 +2,8 @@
 
 <mt-second-topnavbar>Loading......</mt-second-topnavbar>
 
-<mt-home> Loading...</mt-home>
 
-<mt-cards>Loading... </mt-cards>
-
-<div *ngFor = "let product of products">
-<mt-lower-cards img = {{product.img}} 
-[price] = 'product.price' 
-description = {{product.description}}  
-class = "card"> Loading...</mt-lower-cards>
-</div>
-
+<router-outlet></router-outlet>
 
 
 

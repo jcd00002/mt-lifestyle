@@ -10,6 +10,13 @@ import { SecondNavBarComponent } from 'src/navigation/second.topnavbar.component
 import { TopNavBarComponent } from 'src/navigation/topnavbar.component';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MustangLifestyleMerchComponent } from 'src/body/mustang-merch-layout.component';
+import { HomeLayoutComponent } from 'src/body/homelayout.component';
+import { AccountComponent } from 'src/body/account-layout.component';
+import { FordVehiclesComponent } from 'src/body/ford-vehicles-layout.component';
+import { MustangComponent } from 'src/body/2020-gt500-layout.component';
+
 
 @NgModule({
   declarations: [
@@ -18,10 +25,16 @@ import { AppComponent } from './app.component';
     SecondNavBarComponent,
     HomeComponent,
     CardsComponent,
-    LowerCardsComponent
+    LowerCardsComponent,
+    MustangLifestyleMerchComponent,
+    HomeLayoutComponent,
+    FordVehiclesComponent, 
+    MustangComponent, 
+    AccountComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
