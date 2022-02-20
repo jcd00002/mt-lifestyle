@@ -1,40 +1,8 @@
-
-    <div class="d-flex card flex-row bd-highlight mb-3">
-        <div *ngFor = "let product of products">
-        <mt-lower-cards img = {{product.img}} 
-        description = {{product.description}}  
-        class = "card"> Loading...</mt-lower-cards>
+<div class="row row-cols-3">
+    <div *ngFor="let product of products">
+        <div class="col">
+            <mt-ford-cards img={{product.img}} description={{product.description}} class="card"> Loading...
+            </mt-ford-cards>
         </div>
-        </div>
-
-        
-<div class="card-group">
-    <div class="card">
-      <div class = "img">
-      <div class="card-body">
-      <h5 class="card-title">HOODIES</h5>
-        <p class="card-text"> View all.</p>
-        <img src="assets/card1.png" class="card-img-top" alt="...">
-      </div>
-      </div>
     </div>
-    <div class="card">
-      <div class = "img">
-      <div class="card-body">
-        <h5 class="card-title">HATS</h5>
-        <p class="card-text">View all</p>
-        <img src="assets/card2.png" class="card-img-top" alt="...">
-      </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class = "img">
-      <div class="card-body">
-        <h5 class="card-title">APPAREL</h5>
-        <p class="card-text">View all</p>
-        <img src="assets/card3.jpg" class="card-img-top" alt="...">
-      </div>
-      </div>
-    </div>
-    </div>
-
+</div>

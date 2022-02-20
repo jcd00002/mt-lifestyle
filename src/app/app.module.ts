@@ -16,6 +16,7 @@ import { HomeLayoutComponent } from 'src/body/homelayout.component';
 import { AccountComponent } from 'src/body/account-layout.component';
 import { FordVehiclesComponent } from 'src/body/ford-vehicles-layout.component';
 import { MustangComponent } from 'src/body/2020-gt500-layout.component';
+import { FordCardsComponent } from 'src/body/fordcards.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MustangComponent } from 'src/body/2020-gt500-layout.component';
     HomeLayoutComponent,
     FordVehiclesComponent, 
     MustangComponent, 
-    AccountComponent
+    AccountComponent,
+    FordCardsComponent
   ],
   imports: [
     BrowserModule,
