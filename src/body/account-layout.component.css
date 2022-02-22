@@ -1,14 +1,18 @@
+.content{
+    transform: translateY(65px); 
+   
+}
 .form-center{
-    
-    height: 100px; 
-    width: 550.5px; 
-    margin-left: 575px; 
-    
+    margin-bottom: 10px;
+   
 }
 
-.button{
-    
-    height: 100px; 
-    width: 550.5px; 
-    margin-left: 575px;
+.h3 mb-3 fw-normal{ 
+    font-family: "Unica One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1.875em;
 }
+

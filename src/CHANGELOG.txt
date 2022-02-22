@@ -1,38 +1,27 @@
-To begin working this week on the website, the first order of instructions was to install routing for angular.
+Changelog Lab 5 
 
-Ater I installed routing for angular, the app-routing.module.ts appear in the package explorer. 
+1. Addition of ml.merch.cards.component files
+-Implentation of 4 new cards not using ng for loop
+-Each card has a photo linked to it, description, and price 
+-4 cards added so far on the "mustang lifestyle page"
 
-1.Inside of route module, implementation of a new linked list takes places. 
-Next I imported the routerModules from angular. 
+2. Adittion of 3 new files called header.component
+- Addition of 3 new headers/ photos on the website under the mustang lifestyle merch tab the same page 
+as the components that were created in number 1
 
-2.To create new components and make code aviable on certain pages on compared to others, I began making a series of classes and moving some code around. 
-+ Addition of files called mustang.merch-layout.component.css,html,ts
-+ implementation of the ts file that way it is able to be used on the website
-+ imported in the app.module.ts file 
-+ insde of the app-routing class, addition of path to the webpage for the tab "Mustang Lifestyle Merch" 
+3. Addition of a log in for the account under account page 
+In the account layout component, addition of code to sign in with email and password along with 
+forgot password and creating account tabs
 
-Inside of the class of second.top navbar component.html:
-+ addition of routerLink to the Mustang Lifestyle Merch implmentation button. 
+4. Addition of 3 new files called fordcards.component
+Under the ford vehicles page, I addded a ngfor loop that creates cards according 
+to the values I sign to each instance of the card 
 
-Creation of another routing/ new component file called homelayout.component
-+ This file takes place as the new homepage where all the code, cards, navbar, carousel were created
-+ Luckly all of these components belong inside the home tab, therefore I moved the code for everything from app.module.html besides the navbar
-inside of homelayout.component.html
+5. Addition of a file called ford-product-item- module.ts 
+This file is the initialization of the instances that are used in the for loop 
+The ngfor loop consists of the two requirements of the card 
+which in my case is descrption and image 
 
-3. Addition of new files called "ford-vehicles-layout.component.css,html,ts 
-+ implementation of the ts file that way it is able to be used on the website
-+ imported in the app.module.ts file 
-+ insde of the app-routing class, addition of path to the webpage for the tab "Ford Vehicles" 
+6. Addition of a new file called ford_vehicles_product_list.ts 
+This class contains each instance of the card information used in the for loop 
 
-4. Addition of new angular routing/component files called "Account" to take you to the account page 
-+ implementation of the ts file that way it is able to be used on the website
-+ imported in the app.module.ts file 
-+ insde of the app-routing class, addition of path to the webpage for the tab "mustanglifestyle.net/account" 
-
-5.  Addition of new angular routing/component files called "2020-gt500.component.css,html,ts" to take you to the account page 
-+ implementation of the ts file that way it is able to be used on the website
-+ imported in the app.module.ts file 
-+ insde of the app-routing class, addition of path to the webpage for imformation about the "2020 gt500" 
-
-6. After created the 5 components then adding routes to them I began to fix some issues I am having on my "home" page 
- 

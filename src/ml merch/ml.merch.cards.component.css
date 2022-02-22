@@ -1,0 +1,17 @@
+.card{ 
+    margin-left: 115px;
+    border-style: none;
+}
+
+.card-title{
+   text-align: center;
+}
+
+.card-text{ 
+    text-align: center;
+
+}
+
+.btn{
+    align-self: center;
+}

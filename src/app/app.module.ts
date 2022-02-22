@@ -17,6 +17,9 @@ import { AccountComponent } from 'src/body/account-layout.component';
 import { FordVehiclesComponent } from 'src/body/ford-vehicles-layout.component';
 import { MustangComponent } from 'src/body/2020-gt500-layout.component';
 import { FordCardsComponent } from 'src/body/fordcards.component';
+import { FooterComponent } from 'src/navigation/footer.component';
+import { HeaderComponent } from 'src/shelby/header.component';
+import { MlMerchComponent } from 'src/ml merch/ml.merch.cards.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { FordCardsComponent } from 'src/body/fordcards.component';
     FordVehiclesComponent, 
     MustangComponent, 
     AccountComponent,
-    FordCardsComponent
+    FordCardsComponent,
+    FooterComponent,
+    HeaderComponent,
+    MlMerchComponent
   ],
   imports: [
     BrowserModule,
