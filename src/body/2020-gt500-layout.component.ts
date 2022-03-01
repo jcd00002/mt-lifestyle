@@ -1,4 +1,7 @@
-import { Component } from "@angular/core";
+import { Input,Component } from "@angular/core";
+import { gt500_product_list } from "./GT500 Cards/gt500_product_item";
+import { GT500ProductItemModel } from "./GT500 Cards/gt500-product-item-module";
+
 
 
 @Component({
@@ -9,4 +12,13 @@ import { Component } from "@angular/core";
 
 export class MustangComponent {
 
+    products: GT500ProductItemModel [] = []; 
+    
+    constructor(){
+      for(var product of gt500_product_list){
+          this.products.push(product); 
+    }
+  }
+    
 }
+

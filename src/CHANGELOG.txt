@@ -1,27 +1,53 @@
-Changelog Lab 5 
+ChangeLog Lab 6
 
-1. Addition of ml.merch.cards.component files
--Implentation of 4 new cards not using ng for loop
--Each card has a photo linked to it, description, and price 
--4 cards added so far on the "mustang lifestyle page"
+Addition of 4 new files inside of a new folder 
+The files follow as user-info.component.html, css, ts
+The last file added is user-info.component.ts 
 
-2. Adittion of 3 new files called header.component
-- Addition of 3 new headers/ photos on the website under the mustang lifestyle merch tab the same page 
-as the components that were created in number 1
+First, new creation of firebase, change of time to may as we were instructed
+Next, inside of the database under the data tab, new implementation of "my-info" which was later used to read
+into the angular project. 
 
-3. Addition of a log in for the account under account page 
-In the account layout component, addition of code to sign in with email and password along with 
-forgot password and creating account tabs
+Next the Implentation of each file follows as: 
 
-4. Addition of 3 new files called fordcards.component
-Under the ford vehicles page, I addded a ngfor loop that creates cards according 
-to the values I sign to each instance of the card 
+ - user-info.component.ts
+ // imported the userInfo from the UserInfo module
+ // imported the HttpClient and the OnInit 
+ // created out component like normal by adding the selector, templateUrl, and styleUrls
 
-5. Addition of a file called ford-product-item- module.ts 
-This file is the initialization of the instances that are used in the for loop 
-The ngfor loop consists of the two requirements of the card 
-which in my case is descrption and image 
+ // Next inside of the UserInfoComponent class, initialization of myInfo to the UserInfo or undefined
+ // called constructor with the Http Client as a parameter
 
-6. Addition of a new file called ford_vehicles_product_list.ts 
-This class contains each instance of the card information used in the for loop 
+ // sent a request to the serve through the console to see our data from firebase 
+
+ // implemented a method called "getUserInfo" which returns the userInfo from the database.json link 
+ // creation of a "showUserInfo" method which calls the getUserInfo.subscribe with data as a paremeter
+ // initialization of data to this.myInfo 
+
+ - userinfo.component.html 
+
+ // shows the information from the firebase and from the .ts file on the website
+ // created 3 columns, one per information entered on the firebase 
+ // implementation of ngIf
+
+ - user-info.module.ts 
+
+ // sets all of the information from the firebase to its corresponding type
+ ex. firstName: string; 
+
+
+ BONUS: 
+
+ Implentation of 5 new cards using ngFor loop under gt500 tab/page
+
+ // creation of 3 files of gt500-cards.component.ts,html,css
+ // addition of a product list for the gt500 page
+ 
+ -- addition of a file called gt500-product-item-module.ts
+    // initialization of the each part of the card
+    // ex. price: number;
+    img:string; 
+    
+
+
 

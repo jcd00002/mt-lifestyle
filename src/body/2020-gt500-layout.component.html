@@ -1,1 +1,8 @@
-This is the 2020 gt500 parts page.
+<div class="d-flex card flex-row bd-highlight mb-3">
+    <div *ngFor = "let product of products">
+    <mt-lower-cards img = {{product.img}} 
+    [price] = 'product.price' 
+    description = {{product.description}}  
+    class = "card"> Loading...</mt-lower-cards>
+    </div>
+    </div>

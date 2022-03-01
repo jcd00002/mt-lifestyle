@@ -1,0 +1,17 @@
+.lower-card{
+    border-color: white;
+    border-bottom-color: white;
+    width: 225px;
+    height: 600px; 
+    text-align: center;
+    font-family: "Unica One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1.875em;
+}
+.card{
+    border-color: white; 
+}
+
