@@ -1,53 +1,26 @@
-ChangeLog Lab 6
+ChangeLog Lab 7
 
-Addition of 4 new files inside of a new folder 
-The files follow as user-info.component.html, css, ts
-The last file added is user-info.component.ts 
+Addition of one new file called "product. service.ts
+Modification of the homelayout.component.ts file
 
-First, new creation of firebase, change of time to may as we were instructed
-Next, inside of the database under the data tab, new implementation of "my-info" which was later used to read
-into the angular project. 
+// implementation of the firebase
+// Addition of the 4 lowers cards that I used and created in lab three
+put into the firebase database so they could be used on the backend of the website instead of 
+being a file inisde of vs code. 
 
-Next the Implentation of each file follows as: 
+// product.serivce.ts
+// at the top of the file we added the injectable with a providedIN to the root
+// inside of the class:
+//addition of the baseUrl which is type string and a link to the firebase that has our data
+// creation of the productsEndpoint which is a string and is linked to the products.json 
+// creation of constructor which takes in the parameter of the HttpClient
+// addition of a public getProducts which returns the Url with the json info 
+// addition of a getProduct method which returns a single product within the list on the firebase 
 
- - user-info.component.ts
- // imported the userInfo from the UserInfo module
- // imported the HttpClient and the OnInit 
- // created out component like normal by adding the selector, templateUrl, and styleUrls
-
- // Next inside of the UserInfoComponent class, initialization of myInfo to the UserInfo or undefined
- // called constructor with the Http Client as a parameter
-
- // sent a request to the serve through the console to see our data from firebase 
-
- // implemented a method called "getUserInfo" which returns the userInfo from the database.json link 
- // creation of a "showUserInfo" method which calls the getUserInfo.subscribe with data as a paremeter
- // initialization of data to this.myInfo 
-
- - userinfo.component.html 
-
- // shows the information from the firebase and from the .ts file on the website
- // created 3 columns, one per information entered on the firebase 
- // implementation of ngIf
-
- - user-info.module.ts 
-
- // sets all of the information from the firebase to its corresponding type
- ex. firstName: string; 
-
-
- BONUS: 
-
- Implentation of 5 new cards using ngFor loop under gt500 tab/page
-
- // creation of 3 files of gt500-cards.component.ts,html,css
- // addition of a product list for the gt500 page
- 
- -- addition of a file called gt500-product-item-module.ts
-    // initialization of the each part of the card
-    // ex. price: number;
-    img:string; 
-    
-
-
-
+//homelayout.component.ts 
+//importation of the productservice we just created 
+//changed the export homeLayout by adding OnInit at the end 
+// changed the constructor to take in the product service that was created
+// creation of ngOnInIt() : void which subscirbes out data from the product service 
+// shows information in the console by fetching the data 
+// next run the ngfor loop like it was original done, then push the products to the website we are creating 
