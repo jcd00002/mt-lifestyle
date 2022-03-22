@@ -1,26 +1,29 @@
-ChangeLog Lab 7
+ChangeLog Lab 8
 
-Addition of one new file called "product. service.ts
-Modification of the homelayout.component.ts file
+// addition of a new web application called mustang-Lifestyle in the firebase 
 
-// implementation of the firebase
-// Addition of the 4 lowers cards that I used and created in lab three
-put into the firebase database so they could be used on the backend of the website instead of 
-being a file inisde of vs code. 
+-- terminal--
 
-// product.serivce.ts
-// at the top of the file we added the injectable with a providedIN to the root
-// inside of the class:
-//addition of the baseUrl which is type string and a link to the firebase that has our data
-// creation of the productsEndpoint which is a string and is linked to the products.json 
-// creation of constructor which takes in the parameter of the HttpClient
-// addition of a public getProducts which returns the Url with the json info 
-// addition of a getProduct method which returns a single product within the list on the firebase 
+// installation of firebase module in the terminal
+// initiallized firebase project inside of my website directory
+//linked github to the project using the firebase 
+// deployed our application using the firebase deploy command inside of the terminal 
+// addition of @angular/fire inside of the terminal which installs the library 
+// after running the command, enviornment.prod.ts added information like ID, database URL, domain, etc
+// enviornment.ts was also changed and used for testing the information 
 
-//homelayout.component.ts 
-//importation of the productservice we just created 
-//changed the export homeLayout by adding OnInit at the end 
-// changed the constructor to take in the product service that was created
-// creation of ngOnInIt() : void which subscirbes out data from the product service 
-// shows information in the console by fetching the data 
-// next run the ngfor loop like it was original done, then push the products to the website we are creating 
+--app.module.ts--
+
+// addition of initiallization of the firebase inside of app.module.ts
+// change of the line above to the AngularFireModule.initiallizeApp, then imported it so there is no errors
+// addition of AngularFireModule to the import section in the file, then imported it at the top 
+
+--products.service.ts--
+
+//inside of the file, I removed the HttpClient the added the realtime datatbase to the file
+// imported the angular fire database 
+//changed the constructor to private db: AngularFireDatabase
+//inside of the getProducts() method, I just return the list of products.ValueChanges()
+// 
+
+

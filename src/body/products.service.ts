@@ -1,23 +1,23 @@
-import { HttpClient} from "@angular/common/http";
+
 import { Injectable } from "@angular/core";
 import { ProductItemModel } from "./product-item-model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+
 
 @Injectable({
     providedIn: 'root'
 })
 export class ProductService{ 
-    private baseUrl: string = "https://mustang-lifestyle-default-rtdb.firebaseio.com/";
-    private productsEndpoint: string = "products.json";
 
-    constructor(private http: HttpClient){
+    constructor(private db:AngularFireDatabase){
 
     }
 
     public getProducts(){
-        return this.http.get<ProductItemModel []>(this.baseUrl + this.productsEndpoint); 
+       return this.db.list<ProductItemModel>("products").valueChanges(); 
     }
 
     public getProduct(index: number){
-        return this.http.get<ProductItemModel>(this.baseUrl + 'products/' + index + '.json')
+  
     }
 }

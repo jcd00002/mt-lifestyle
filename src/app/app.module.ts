@@ -21,8 +21,13 @@ import { FooterComponent } from 'src/navigation/footer.component';
 import { HeaderComponent } from 'src/shelby/header.component';
 import { MlMerchComponent } from 'src/ml merch/ml.merch.cards.component';
 import { UserInfoComponent } from 'src/body/user-info/user-info.component';
-import{ HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'
 import { Gt500CardsComponent } from 'src/body/GT500 Cards/gt500-cards.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [
@@ -48,7 +53,9 @@ import { Gt500CardsComponent } from 'src/body/GT500 Cards/gt500-cards.component'
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    HttpClientModule
+    HttpClientModule, 
+    AngularFireModule.initializeApp(environment.firebase), 
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

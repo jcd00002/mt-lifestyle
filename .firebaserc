@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "mustang-lifestyle"
+  },
+  "targets": {
+    "mustang-lifestyle": {
+      "hosting": {
+        "mt-lifestyle": [
+          "mustang-lifestyle"
+        ]
+      }
+    }
+  }
+}
