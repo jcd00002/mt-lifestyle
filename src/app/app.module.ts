@@ -30,6 +30,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { BodyComponent } from './body/body.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FormsModule } from '@angular/forms';
     MlMerchComponent,
     UserInfoComponent,
     Gt500CardsComponent,
-    BodyComponent
+    BodyComponent,
+    AuthenticationComponent
     
   ],
   imports: [

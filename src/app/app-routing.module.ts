@@ -7,6 +7,7 @@ import { AccountComponent } from 'src/body/account-layout.component';
 import { FordVehiclesComponent } from 'src/body/ford-vehicles-layout.component';
 import { MustangComponent } from 'src/body/2020-gt500-layout.component';
 import { BodyComponent } from './body/body.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 const routes: Routes = [
   {path: '', component: HomeLayoutComponent},
   {path: 'pages/mustang-lifestyle-merch', component: MustangLifestyleMerchComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'collections', component: FordVehiclesComponent},
   {path: 'collections/2020-gt500', component: MustangComponent},
   {path: 'account', component: AccountComponent},
-  {path: 'admin', component: BodyComponent}
+  {path: 'admin', component: BodyComponent},
+  {path: 'auth', component: AuthenticationComponent}
 ];
 
 @NgModule({

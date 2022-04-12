@@ -1,35 +1,18 @@
-ChangeLog Lab 9 
+ChangeLog Lab 10
+Addition of three new files called Authentication.component.ts,css,html 
+Addition of authentication.service.ts 
+Changed/Added 6 different files
 
-// creation of a from to enter information on a new page called the admin page, that
-allows the admin to enter an item on my homepage, it sends the information to the firebase, and displays the item 
-on the homepage 
+//app-routing.module.ts
+--imported the new authentication files I just created 
+--created a path to the "auth" page 
 
+//app.module.ts
+--imported the authentication component
 
-// Addition of 3 new files body.component.html,css,ts
+//authentication.component.html 
+-- created a form to accept user input for an email and passsword, where the password has a required length of 8
 
-// Change in app-routing.module.ts
--- created a new path to the admin page with the component linked to the new files that were created (bodyComponent)
--- imported the new Path that was created 
--- changed the constructor to depend on the ProductsService
+//authentication.component.ts
+--added console.log to track data that is submitted using ngSubmit 
 
-
-// body.component.html 
--- added a form that can be used to accept user input 
--- created a container class, a row class 
--- creation of Postform  using ngForm 
--- creation of a input group inside of the created classes above 
--- addition of a span
--addition of an input with a box to enter text inside 
--- addition of 3 boxes, one for price, one for description, and one for image 
---specified each location from the ngModel that corresponds with the fields above 
--- adition of a button to be able to submit the information entereed above 
-
-// inside of app.module.ts 
--- imported the FormsModule 
--- addition of add product (Product from ProductItemModel) which allows to add items
--- addition of log of the product that is added 
-
-
-//inside of product.serivce.ts 
--- created an addProduct method for each product in the ProductItemModel
---inside the addProduct method, I pushed pushed the products from the ProductItemModel list 
