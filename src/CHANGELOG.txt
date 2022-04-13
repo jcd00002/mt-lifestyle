@@ -1,18 +1,17 @@
-ChangeLog Lab 10
-Addition of three new files called Authentication.component.ts,css,html 
-Addition of authentication.service.ts 
-Changed/Added 6 different files
+ChangeLog Bonus Lab 
 
-//app-routing.module.ts
---imported the new authentication files I just created 
---created a path to the "auth" page 
+The first thing I did in this lab was run the command ng test which opened up the a link 
+in google chrome that ran tests in the app.component.spec.ts 
 
-//app.module.ts
---imported the authentication component
+-- removed the test that was throwing the error just link in Nikola's video
 
-//authentication.component.html 
--- created a form to accept user input for an email and passsword, where the password has a required length of 8
+//Creation of new file called gt500-cards.component.spec.ts 
+Inside of the file, we copied the components from angular to have a foundation of unit tests 
 
-//authentication.component.ts
---added console.log to track data that is submitted using ngSubmit 
+// this file runs tests to see if the cards we are creating are operating like they should 
+// the cards were created using a ngFor loop 
+
+// creation of a test to see if the component is actually created, which is successful 
+// addition of a new test to check if the description of the card that is expected is returning the correct value 
+// addition of a new test to check if the expected card price is displayed like it should
 
